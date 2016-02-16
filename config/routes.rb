@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   devise_for :admins
 # root to: "admin#home"
+# get 'products#show'
 root :to => "admin#home"
   get 'admin/home'
 
   # devise_for :admins
   # get 'admin/home'
-  get '/welcomes' => 'welcome#index', as: 'welcome'
+  # get '/welcomes' => 'welcome#index', as: 'welcome'
 
   # get 'admin/home'
   resources :admins

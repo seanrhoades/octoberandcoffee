@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<%if admin_signed_in? == false %>
+    <%  puts 'hi' %>
+    <% end %>
 <h1>Listing Products</h1>
 
 <table>
