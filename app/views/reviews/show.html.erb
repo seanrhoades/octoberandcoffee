@@ -10,9 +10,9 @@
 
   <%= @review.product.name %>
 </p>
-
+<%if admin_signed_in? == true %>
 <%= link_to 'Edit', edit_review_path(@review) %> |
-
+  <% end %>
 <% if @review.product.nil? %>
   <%= link_to 'Back', reviews_path %>
 
