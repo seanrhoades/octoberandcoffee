@@ -13,3 +13,4 @@
 
  Product.create([
 {name:"TOPECA COFFEE ROASTERS - EL SALVADOR AYUTEPEQUE", description: "Nutty, chocolate, rich. From El Salvador.", image:"http://truthkingdom.com/wyncode/wendy-hayward.jpg", price_in_cents: 600},
+])
