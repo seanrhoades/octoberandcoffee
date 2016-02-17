@@ -3,9 +3,9 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link" font-face="bebas">Products</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item"><a href="products" class="pure-menu-link" font-face="bebas">Products</a></li>
+            <li class="pure-menu-item"><a href="products#about_us" class="pure-menu-link">About Us</a></li>
+            <li class="pure-menu-item"><a href="products#contact" class="pure-menu-link">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -23,6 +23,7 @@
     <% @products.each do |product| %>
       <div><%= product.name %></div>
       <div><%= product.description %></div>
+      <div><%= product.image %></div>
       <div>$<%= product.formatted_price %></div>
         <!-- <td><%= product.price_in_dollars %></td> -->
     <% end %>

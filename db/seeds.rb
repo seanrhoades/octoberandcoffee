@@ -12,5 +12,7 @@
  user = Admin.create!(email: 'admin@admin.com', password: 'admin123456', password_confirmation: 'admin123456')
 
  Product.create([
-{name:"TOPECA COFFEE ROASTERS - EL SALVADOR AYUTEPEQUE", description: "Nutty, chocolate, rich. From El Salvador.", image:"http://truthkingdom.com/wyncode/wendy-hayward.jpg", price_in_cents: 600},
+{name:"TOPECA COFFEE ROASTERS - EL SALVADOR AYUTEPEQUE", description: "Nutty, chocolate, rich. From El Salvador.", price_in_dollars: 16, image:"http://www.seanrhoades.com/coffeeimages/1.jpg",
+name:"SPYHOUSE COFFEE ROASTING CO - ORION ESPRESSO", description: "Chocolate, fruity, rich. From Brazil, Ethiopia and Guatemala.", price_in_dollars: 22, image:"http://www.seanrhoades.com/coffeeimages/2.jpg",}
+
 ])
