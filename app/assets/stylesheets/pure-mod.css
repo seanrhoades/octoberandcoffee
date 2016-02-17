@@ -24,6 +24,12 @@ label {
     color: #34495e;
 }
 
+a {
+  color: #BA828C;
+  text-decoration: none;
+
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -46,6 +52,10 @@ label {
     text-align: center;
 }
 
+.product_home {
+  max-width: 300px;
+  margin: auto;
+}
 
 
 /*
@@ -166,7 +176,7 @@ a.pure-button-primary {
     background: url('logo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 80% auto;
     height: 100%;
     font-weight: bold;
     color: white;
