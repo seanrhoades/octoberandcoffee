@@ -3,14 +3,14 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="products" class="pure-menu-link" font-face="bebas">Products</a></li>
+            <li class="pure-menu-item"><a href="products" class="pure-menu-link">Products</a></li>
             <li class="pure-menu-item"><a href="products#about_us" class="pure-menu-link">About Us</a></li>
             <li class="pure-menu-item"><a href="products#contact" class="pure-menu-link">Contact</a></li>
         </ul>
     </div>
 </div>
 
-<div class="splash-container">
+<div class="splash-container" font-family='Roboto'>
     <div class="splash">
       <div class="splash-head">
       </div>
@@ -23,9 +23,9 @@
   </div>
     <div class="pure-g">
       <% @products.each do |product| %>
-      <div class="pure-u-1-3 pure-u-md-1-3 is-center">
+      <div class="pure-u-3 pure-u-md-1-3 is-center">
         <%= image_tag product.image, class:'product_home' %>
-    <h5><%= link_to "#{product.name}", product %></h5>
+    <h5><%= link_to "#{product.name}", product, class: ('pure-menu-link')%></h5>
     </div>
   <% end %>
     </div>

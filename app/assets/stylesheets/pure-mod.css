@@ -10,8 +10,6 @@
  */
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
-    font-size: 13px;
 }
 
 h1,
@@ -21,14 +19,14 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: brown;
 }
 
 a {
-  color: #BA828C;
+  color: #230800;
   text-decoration: none;
-
 }
+
 
 .pure-img-responsive {
     max-width: 100%;
@@ -44,19 +42,20 @@ a {
 }
 
 .l-box-lrg {
-    padding: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .is-center {
     text-align: center;
+
 }
 
 .product_home {
   max-width: 300px;
   margin: auto;
 }
-
 
 /*
  * -- PURE FORM STYLES --
@@ -101,6 +100,7 @@ a.pure-button-primary {
  */
 
 .home-menu {
+
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
@@ -117,20 +117,17 @@ a.pure-button-primary {
 
 .home-menu .pure-menu-heading {
     color: #dfdfdf;
-    font-weight: bold;
     font-weight: 400;
     font-size: 120%;
 }
 
 .home-menu .pure-menu-selected a {
     color: #dfdfdf;
-    font-weight: bold;
 
 }
 
 .home-menu a {
     color: #dfdfdf;
-    font-weight: bold;
 
 }
 .home-menu li a:hover,
@@ -138,7 +135,6 @@ a.pure-button-primary {
     background: none;
     border: none;
     color: #ba9583;
-    font-weight: bold;
 }
 
 
@@ -212,6 +208,7 @@ a.pure-button-primary {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
+    color: #230800;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -221,7 +218,7 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: black;
 }
     .content-subhead i {
         margin-right: 7px;

@@ -1,4 +1,4 @@
-<h1>Admin Dashboard</h1>
+<!-- <h1>Admin Dashboard</h1>
 
 <ul>
   <li><%= link_to 'Products', products_path %></li>
@@ -13,4 +13,26 @@
   <li>
   <%= link_to('Login', new_admin_session_path)  %>
   </li>
+<% end %> -->
+<div class="is-center">
+<marquee behavior="scroll" direction="right" scrollamount="10"><blink><h1> Admin Dashboard</h1></blink></marquee>
+</div>
+<div class="is-center">
+<p><%= link_to 'Products', products_path %></p>
+<p><%= link_to 'Reviews', reviews_path %></p>
+
+<img src="http://rs636.pbsrc.com/albums/uu90/vanessa68_2009/Macros%20and%20gifs/McHammer.gif~c200">
+<br>
+<img src="https://nullroute.eu.org/mirrors/xkcd-geocities/imgs.xkcd.com/geocities.jpg"><br>
+<img src="http://img15.hostingpics.net/pics/419640contatore.gif">
+
+<% if admin_signed_in? %>
+ <p>
+ <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>
+</p>
+<% else %>
+ <p>
+ <%= link_to('Login', new_admin_session_path)  %>
+</p>
 <% end %>
+</div>

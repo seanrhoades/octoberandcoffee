@@ -10,38 +10,23 @@
     </div>
 </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <div class="is-center">
+    <%= image_tag @product.image %>
 
-<strong>Image:</strong>
-<%= @product.image %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.formatted_price %>
-</p>
-
-
-<h3>Reviews</h3>
-  <% @product.reviews.each do |review| %>
-    <p>
-      <%= review.comment %>
-      <br>
-       <%= review.created_at.strftime("%m/%d/%Y") %>
-    </p>
-<% end %>
-
-<h3>New Review</h3>
-<%= render 'reviews/form' %>
-
-
-<!-- # <%= link_to 'Edit', edit_product_path(@product) %> | -->
-<%= link_to 'Back', products_path %>
+    <h3 class="product-h1"><%= @product.name %></h3>
+  </div>
+    <div class="is-center">
+    <% descriptions = @product.description.split(". ") %>
+        <% descriptions.each do |description| %>
+        <br><%= description %>
+        <% end %>
+  <h2 align="center"><%= number_to_currency(@product.formatted_price) %></h2>
+  <div class="is-center"><br>
+    <h3 class="review" color="#230800">Reviews</h3>
+    <% @product.reviews.each do |review| %>
+    <p class="reviews"><%= review.comment %><br /><%= review.created_at.strftime("%m/%d/%Y") %></p>
+    <% end %>
+    <%= render 'reviews/form' %>
+  </div>
+</div><br>
+    <div align="center"><%= link_to 'Back', products_path, class: "btn btn-info" %></div>
