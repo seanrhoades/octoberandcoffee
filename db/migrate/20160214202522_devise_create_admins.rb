@@ -2,7 +2,7 @@ class DeviseCreateAdmins < ActiveRecord::Migration
   def change
     create_table(:admins) do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: "admin@yahoo.com"
+      t.string :email,              null: false, default: "admin@admin.com"
       t.string :encrypted_password, null: false, default: "admin1234567"
 
       ## Recoverable

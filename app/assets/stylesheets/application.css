@@ -12,4 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require_pure
+ *= require_pure-mod
+ *= require_pure
+
  */
